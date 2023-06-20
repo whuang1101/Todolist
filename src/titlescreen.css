@@ -1,0 +1,106 @@
+* {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-family: "CustomFont";
+}
+.header{
+    flex: .5;
+    background-image: linear-gradient(to right, #ec4899, #fdf2f8);
+    font-size: 5em;
+    display: flex;
+    padding: .2em;
+    border-bottom: 2px solid rgb(246, 154, 169);
+  }
+.title {
+    color: #fdf2f8;
+    flex: 10;
+    display: flex;
+    justify-content: center;
+}
+.color {
+    color: #f572ba;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.main {
+    flex: 5; background-color: white;
+    display: flex;
+}
+.header {
+    display: flex;
+    align-items: center;
+}
+.dropdown {
+    flex: .1;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+.dropdown:hover {
+    background-color: rgb(254, 154, 253);
+}
+.main-content {
+    flex: 8;
+    background-color: rgb(252, 252, 252);
+}
+
+.drop-down-items {
+    display: flex;
+    flex-direction: column;
+    flex: 2; 
+    background-color: #fdf2f8;
+    padding: .5em;
+    font-size: 2em;
+    gap: .6em;
+    opacity: 1;
+    transition: transform 1s ease, opacity 1s ease;
+}   
+.home, .project{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid black;
+    padding: .05em;
+
+}
+.home-things {
+    display: flex;
+    flex-direction: column;
+    padding-left: .5em;
+    gap: .1em;
+}
+.inbox,.today, .this-week, .important{ 
+    display: flex;
+    font-size: .7em;
+    padding: .3em;
+    gap: .5em;
+}
+.inbox:hover ,.today:hover, .this-week:hover, .important:hover{ 
+    background-color: #f9a8d4;
+    border-radius: 2em;
+}
+.hide {
+    display: none;
+}
+.main-title {
+    background-color: #ec4899;
+    color: white;
+    font-size: 3rem;
+    padding: .5em .5em .5em .5em;
+    border-radius: 1rem;
+}
+.format {
+    padding: 1rem;
+}
+.highlight {
+    background-color: #f9a8d4;
+    border-radius: 2em;
+}
+@font-face {
+    font-family: 'CustomFont';
+    src: url('Kolibest.otf') format('opentype'),
+         url('Kolibest.ttf') format('truetype');
+  }
