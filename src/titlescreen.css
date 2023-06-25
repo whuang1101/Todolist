@@ -85,6 +85,7 @@
 .hide {
     display: none;
 }
+
 .main-title {
     background-color: #ec4899;
     color: white;
@@ -98,6 +99,9 @@
 .highlight {
     background-color: #f9a8d4;
     border-radius: 2em;
+}
+.popup-hide {
+    display: none;
 }
 @font-face {
     font-family: 'CustomFont';
