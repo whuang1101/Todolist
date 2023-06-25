@@ -7,6 +7,5 @@ function makeMain (toView){
     });
     let showElement = document.querySelector(toView);
     showElement.classList.remove("hide");
-    console.log(showElement);
 }
 export {makeMain}
