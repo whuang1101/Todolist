@@ -8,4 +8,7 @@ function makeMain (toView){
     let showElement = document.querySelector(toView);
     showElement.classList.remove("hide");
 }
+function addTask() {
+    
+}
 export {makeMain}

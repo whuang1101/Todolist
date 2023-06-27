@@ -3,7 +3,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 40%;
+    height: 45%;
     width: 70%;
     background-color: #fce7f3;
     z-index: 1000;
@@ -11,6 +11,7 @@
   }
 
 .form {
+    font-family: 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
     font-size: 1.5em;

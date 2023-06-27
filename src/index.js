@@ -1,13 +1,7 @@
 import "./titlescreen.css";
-import { format } from 'date-fns'; 
-import { makeToday } from "./today";
-import { makeThisWeek } from "./this_week";
-import { makeImportant } from "./make_important";
-import { addHighlight } from "./add_highlight";
-import { makeMain } from "./add_main";
-makeMain
-
-
+import "./popup.css";
+import {makeAllTasks, makeCompleted, makeImportant, makeThisWeek, makeToday} from "./make_home_items_page";
+import { generateTask, getPopUpInfo, popupManager } from "./make_page";
 function dropDownToggle() {
     const dropdown = document.querySelector(".dropdown");
     dropdown.addEventListener("click",() => {
@@ -23,15 +17,13 @@ function dropDownToggle() {
         }
     })
 }
-//This contains all pages and ones to hide;
-let allTasksPage = document.querySelector(".all-tasks-page");
 makeToday();
 dropDownToggle();
 makeThisWeek();
 makeImportant();
+const makeTasks = makeAllTasks();
+makeTasks.classList.remove("hide");
+popupManager(makeTasks);
+getPopUpInfo();
+makeCompleted();
 
-let allTasksButton = document.querySelector(".inbox");
-allTasksButton.addEventListener("click", ()=> {
-    addHighlight(".inbox");
-    makeMain(".all-tasks-page");
-})

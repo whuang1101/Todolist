@@ -20,7 +20,10 @@
             
                 <label for="date">Date:</label>
                 <input type="date" id="date" name="date" required>
-            
+                <div class="importantOrNot">
+                    <label for="isImportant">Priority?</label>
+                    <input type="checkbox" name="isImportant" id="isImportant">
+                </div>
                 <button type="submit" id="submit">Submit</button>
             </form>
         </div>
@@ -59,15 +62,13 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title>exclamation-thick</title><path d="M10 3H14V14H10V3M10 21V17H14V21H10Z" /></svg>
                         <div class="important-tasks">Important</div>
                     </div>
-                </div>
-                <div class="project">
-                    <div class="project-titles">Project</div>
+                    <div class="completed">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><title>check-bold</title><path d="M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z" /></svg>
+                        <div class="completed-tasks">Completed</div>
+                    </div>
                 </div>
             </div>
             <div class="main-content">
-                <div class="all-tasks-page format">
-                    <div class="main-title">All Tasks</div>
-                </div>
             </div>
         </div>
     </div>
